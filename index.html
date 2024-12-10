@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LSPD - Accueil</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <style>
+    /* Variables de couleur */
+    :root {
+      --primary-color: #00274d;
+      --secondary-color: #004080;
+      --accent-color: #f4b400;
+      --light-color: #f9f9f9;
+      --text-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--light-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: var(--secondary-color);
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--accent-color);
+      transform: scale(1.1);
+    }
+
+    .banner {
+      background: url('https://via.placeholder.com/1920x600?text=LSPD+Banner') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-color);
+      font-size: 2.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .photos img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .photos img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      background: var(--primary-color);
+      text-align: center;
+      color: var(--text-color);
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Los Santos Police Department</h1>
+    <p>"Protéger et servir avec honneur"</p>
+  </header>
+
+  <nav>
+    <a href="#about">À propos</a>
+    <a href="#recruitment">Recrutement</a>
+    <a href="#photos">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="banner">
+    Bienvenue à la LSPD
+  </div>
+
+  <section id="about">
+    <h2>À propos de la LSPD</h2>
+    <p>La Los Santos Police Department est dédiée à la protection des citoyens et au maintien de l'ordre public. Nous sommes fiers de nos agents engagés à servir la communauté.</p>
+  </section>
+
+  <section id="photos">
+    <h2>Galerie</h2>
+    <p>Découvrez les moments marquants de nos interventions et la vie au sein de la LSPD.</p>
+    <div class="photos">
+      <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Photo 1">
+      <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Photo 2">
+      <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Photo 3">
+      <img src="https://via.placeholder.com/300x200?text=Photo+4" alt="Photo 4">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Los Santos Police Department. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
